@@ -5,7 +5,11 @@
         "php": "^7.2.5",
         "ext-ctype": "*",
         "ext-iconv": "*",
+        "antishov/doctrine-extensions-bundle": "^1.4",
+        "knplabs/knp-paginator-bundle": "^5.1",
+        "liip/imagine-bundle": "^2.3",
         "sensio/framework-extra-bundle": "^5.1",
+        "stewie/user-bundle": "^1.0",
         "symfony/apache-pack": "^1.0",
         "symfony/asset": "5.0.*",
         "symfony/console": "5.0.*",
@@ -29,9 +33,6 @@
         "symfony/validator": "5.0.*",
         "symfony/web-link": "5.0.*",
         "symfony/yaml": "5.0.*",
-        "antishov/doctrine-extensions-bundle": "^1.4",
-        "knplabs/knp-paginator-bundle": "^5.1",
-        "liip/imagine-bundle": "^2.3",
         "vich/uploader-bundle": "^1.13"
     },
     "require-dev": {

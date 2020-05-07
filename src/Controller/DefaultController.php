@@ -9,11 +9,22 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 class DefaultController extends AbstractController
 {
     /**
-    * @Route("/", name="home")
+    * @Route("/home", name="home")
     */
     public function home()
     {
       return $this->render('default/home.html.twig', [
+          'headline' => 'brasstonality headline',
+          'content' => 'brasstonality content',
+      ]);
+    }
+
+    /**
+    * @Route("/", name="index")
+    */
+    public function index()
+    {
+      return $this->render('default/index.html.twig', [
           'headline' => 'brasstonality headline',
           'content' => 'brasstonality content',
       ]);
