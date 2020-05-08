@@ -14,8 +14,8 @@
         <!-- left alligned -->
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <!-- home -->
-            <li class="nav-item {% if app.request.attributes.get('_route') == 'home' %} active{% endif %}">
-              <a class="nav-link" href="{{ path('home') }}">Home <span class="sr-only">(current)</span></a>
+            <li class="nav-item {% if app.request.attributes.get('_route') == 'index' %} active{% endif %}">
+              <a class="nav-link" href="{{ path('index') }}">Home <span class="sr-only">(current)</span></a>
             </li>
             <!-- user -->
             {% if is_granted('ROLE_USER_USER_VIEW') %}

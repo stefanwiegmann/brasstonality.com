@@ -6,9 +6,9 @@
         {% embed "nav.html.twig" %}{% endembed %}
     {% endblock nav %}
 
-    {% block flash %}
-        {% embed "flash.html.twig" %}{% endembed %}
-    {% endblock flash %}
+    {% block alert %}
+        {% embed "alert.html.twig" %}{% endembed %}
+    {% endblock alert %}
 
     <div id="main">
         {% block main %}
@@ -18,7 +18,7 @@
                 <div class="col-md-2"><!-- left menu column -->
 
                     {% block menuBlock %}
-                        <div class="card" id="menuBlock">
+                        <div class="card my-3" id="menuBlock">
 
                             <div class="card-header">
                                 {% block menuTitle %}menuTitle{% endblock menuTitle %}
@@ -35,10 +35,8 @@
                         </div><!-- menuBlock -->
                     {% endblock menuBlock %}
 
-                    <br>
-
                     {% block filterBlock %}
-                        <div class="card" id="filterBlock">
+                        <div class="card my-3" id="filterBlock">
 
                             <div class="card-header">
                                 {% block filterTitle %}filterTitle{% endblock filterTitle %}
@@ -55,8 +53,8 @@
 
                 <div class="col-md-10"><!-- right content column -->
 
-                    <div class="row" id="pageHeader">
-                        {% block pageHeader %}
+                    {% block pageHeader %}
+                        <div class="row" id="pageHeader">
 
                             <!-- page title column -->
                             <div class="col-md-6">
@@ -70,8 +68,8 @@
                                 {% block pageMenu %}pageMenu{% endblock pageMenu %}
                             </div>
 
-                        {% endblock pageHeader %}
-                    </div><!-- pageHeader -->
+                        </div><!-- pageHeader -->
+                    {% endblock pageHeader %}
 
                     <div class="container-fluid" id="content">
                         {% block content %}content{% endblock content %}
