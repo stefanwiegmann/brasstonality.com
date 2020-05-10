@@ -7,7 +7,7 @@
 }
 html,
 body {
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Actor', sans-serif;
   /* padding-top: 5px; */
   /*padding-bottom: 20px;*/
   height: 100%;
@@ -41,6 +41,8 @@ footer {
     padding: 15px;
     /* background-color: #5DADE2; */
 }
+
+
 /* #layout {
   	min-height: 100%;
   	position: relative;
