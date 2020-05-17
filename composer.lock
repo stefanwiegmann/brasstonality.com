@@ -2779,16 +2779,16 @@
         },
         {
             "name": "stewie/user-bundle",
-            "version": "v1.0.1",
+            "version": "v1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/stefanwiegmann/StewieUserBundle.git",
-                "reference": "c25729aea53996c617985f329b3673da70f1e849"
+                "reference": "71e82baefdd864e18002f3f690e65a9f32f30e55"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stefanwiegmann/StewieUserBundle/zipball/c25729aea53996c617985f329b3673da70f1e849",
-                "reference": "c25729aea53996c617985f329b3673da70f1e849",
+                "url": "https://api.github.com/repos/stefanwiegmann/StewieUserBundle/zipball/71e82baefdd864e18002f3f690e65a9f32f30e55",
+                "reference": "71e82baefdd864e18002f3f690e65a9f32f30e55",
                 "shasum": ""
             },
             "require": {
@@ -2834,7 +2834,7 @@
             "keywords": [
                 "user bundle symfony symfony5"
             ],
-            "time": "2020-05-07T23:12:34+00:00"
+            "time": "2020-05-17T22:52:28+00:00"
         },
         {
             "name": "symfony/apache-pack",
