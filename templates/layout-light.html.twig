@@ -4,20 +4,20 @@
 
     {{ parent() }}
 
-    <link href="{{ asset('css/brasstonality-dark.css') }}?<?php echo date('l jS \of F Y h:i:s A'); ?>" rel="stylesheet">
+    <link href="{{ asset('css/brasstonality.css') }}?<?php echo date('l jS \of F Y h:i:s A'); ?>" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="{{ asset('images/favicon.ico') }}" />
     <link rel="shortcut icon" href="{{ asset('images/favicon.ico') }}">
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('images/miles-dutch-white180x180.png?') }}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('images/miles-dutch-white32x32.png?') }}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('images/miles-dutch-white16x16.png?') }}">
-    <link rel="mask-icon" href="{{ asset('images/miles-dutch-white.svg') }}" color="#343a40">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('images/apple-touch-icon.png?') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('images/favicon-32x32.png?') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('images/favicon-16x16.png?') }}">
+    <link rel="mask-icon" href="{{ asset('images/safari-pinned-tab.svg') }}" color="#E9ECEF">
 
 {% endblock stylesheets %}
 
 {% block body %}
 
     {% block nav %}
-        {% embed "nav-dark.html.twig" %}{% endembed %}
+        {% embed "nav.html.twig" %}{% endembed %}
     {% endblock nav %}
 
     {% block alert %}

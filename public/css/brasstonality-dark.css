@@ -1,3 +1,36 @@
+:root {
+    --white:        #fff;
+    --gray-100:     #f8f9fa;
+    --gray-200:     #e9ecef;
+    --gray-300:     #dee2e6;
+    --gray-400:     #ced4da;
+    --gray-500:     #adb5bd;
+    --black:        #000;
+
+    --gray-600:     #6c757d;
+    --gray-700:     #495057;
+    --gray-800:     #343a40;
+    --gray-900:     #212529;
+
+    --bone:         #D6D6C6;
+    --dutch-white:  #DED7B2;
+    /* --buff:         #EDDA8A; */
+    --buff:         #b38a0a;
+    --gold:         #D4AC0D;
+
+    --amethyst:     #A569BD;
+    --afri-violet:  #BB8FCE;
+
+    --background:       var(--gray-800);
+    --light-background: var(--gray-700);
+    --color:            var(--dutch-white);
+    --active:           var(--buff);
+    --muted:            var(--bone);
+    --link:             var(--amethyst);
+    --link-hover:       var(--afri-violet);
+
+}
+
 * {
  box-sizing: border-box;
 }
@@ -13,7 +46,8 @@ body {
   height: 100%;
   position: relative;
   padding: 0px;
-  background-color: #343A40;
+  background-color: var(--background);
+  color: var(--color);
 }
 #wrapper {
  min-height: 100vh; /* will cover the 100% of viewport */
@@ -33,8 +67,8 @@ footer {
  width: 100%;
  height: 40px;
  padding: 5px;
- background-color: #EAEDED;
- border-color: #EAEDED;
+ background-color: var(--background);
+ border-color: var(--background);
 }
 #main {
   	min-height: 100%;
@@ -43,10 +77,111 @@ footer {
     /* background-color: #5DADE2; */
     /* background-color: #343A40; */
 }
+#menuBlock {
+    background-color: var(--light-background);
+}
+#filterBlock {
+    background-color: var(--light-background);
+}
 .card {
     /* background-color: #5DADE2; */
-    background-color: #343A40;
-    border: #343A40;
+    background-color: var(--background);
+    border: var(--background);
+}
+.text-muted {
+    color: var(--muted);
+}
+.table {
+    color: var(--color);
+}
+/* navigation */
+a {
+    /* color: #404040; */
+    color: var(--link);
+    /* background-color: var(--lightest); */
+    border-color: var(--link);
+    text-decoration: none;
+}
+a:focus, a:hover {
+    /* color: #bfbfbf; */
+    color: var(--link-hover);
+    text-decoration: none;
+    /* background-color: var(--lightest); */
+}
+.active>a:focus, .active>a:hover, .active>a:visited, .active>a:active, .active>a:link{
+    /* color: #bfbfbf; */
+    color: var(--link-active);
+}
+
+/* paginator */
+.page-link {
+    color: var(--link);
+    background-color: var(--light-background);
+    border: var(--background);
+}
+.page-link:focus, .page-link:hover {
+    color: var(--link-hover);
+    background-color: var(--background);
+    border: var(--background);
+}
+.page-item.active .page-link {
+    color: var(--link-hover);
+    background-color: var(--background);
+    border: var(--background);
+}
+
+/* dropdown */
+.dropdown-menu {
+    color: var(--color);
+    background-color: var(--light-background);
+    border: var(--background);
+}
+.dropdown-item {
+    color: var(--color);
+}
+.dropdown-item:focus, .dropdown-item:hover {
+    color: var(--muted);
+    background-color: var(--background);
+    border: var(--background);
+}
+
+/* navbar */
+.navbar-dark .navbar-nav .nav-link {
+    color: var(--color);
+}
+.navbar-dark .navbar-brand {
+    color: var(--color);
+}
+.navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
+    color: var(--muted);
+}
+.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active {
+    color: var(--active);
+}
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
+    color: var(--muted);
+}
+.navbar-dark .navbar-nav .show>.nav-link {
+    color: var(--bone);
+}
+
+/* regular nav links in menus */
+.nav-link {
+    color: var(--color);
+}
+.nav-item.active .nav-link{
+    color: var(--active);
+}
+.nav-link:hover, .nav-link:focus {
+    color: var(--muted);
+}
+
+/* buttons */
+.btn {
+    color: var(--gray-800);
+}
+.btn:hover {
+    color: var(--muted);
 }
 
 
