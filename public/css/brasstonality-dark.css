@@ -18,6 +18,11 @@
     --buff:         #b38a0a;
     --gold:         #D4AC0D;
 
+    --blue-jeans:   #5DADE2;
+    --aero:         #85C1E9;
+    --green-blue:   #2E86C1;
+    --carolina-blue:#3498DB;
+
     --amethyst:     #A569BD;
     --afri-violet:  #BB8FCE;
 
@@ -26,8 +31,8 @@
     --color:            var(--dutch-white);
     --active:           var(--buff);
     --muted:            var(--bone);
-    --link:             var(--amethyst);
-    --link-hover:       var(--afri-violet);
+    --link:             var(--green-blue);
+    --link-hover:       var(--carolina-blue);
 
 }
 
@@ -94,6 +99,23 @@ footer {
 .table {
     color: var(--color);
 }
+.form-control {
+    background-color: var(--light-background);
+    color: var(--color);
+}
+.form-control:focus  {
+    background-color: var(--gray-600);
+    color: var(--color);
+}
+.custom-file-input {
+    background-color: var(--light-background);
+    color: var(--color);
+}
+.custom-file-input:focus {
+    background-color: var(--gray-600);
+    color: var(--color);
+}
+
 /* navigation */
 a {
     /* color: #404040; */
@@ -117,17 +139,17 @@ a:focus, a:hover {
 .page-link {
     color: var(--link);
     background-color: var(--light-background);
-    border: var(--background);
+    border: var(--light-background);
 }
 .page-link:focus, .page-link:hover {
     color: var(--link-hover);
     background-color: var(--background);
-    border: var(--background);
+    border: var(--light-background);
 }
 .page-item.active .page-link {
     color: var(--link-hover);
     background-color: var(--background);
-    border: var(--background);
+    border: var(--light-background);
 }
 
 /* dropdown */
